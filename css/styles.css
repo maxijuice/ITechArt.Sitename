@@ -15,6 +15,11 @@ body {
     src: url("../fonts/SourceSansPro-Regular.ttf") format("truetype");
 }
 
+@font-face{
+    font-family: "Source Sans Bold";
+    src: url("../fonts/SourceSansPro-Bold.ttf") format("truetype");
+}
+
 #wrapper {
     text-align: center;
     max-width: 960px;
@@ -38,7 +43,7 @@ header h1{
 }
 
 nav {
-    margin: 30px auto;
+    margin: 20px auto;
 }
 nav a {
     text-decoration: none;
@@ -81,5 +86,91 @@ img {
 }
 
 div.slider {
-    height: 300px;
+    border-radius: 7px 0px 7px 7px;
+}
+
+div.slider img {
+    width: 95%;
+    align: center;
+    box-shadow: -11px 11px rgba(0,0,0,0.1);
+    border-radius: inherit;
+    margin: 0px auto 11px;
+}
+
+section{
+    margin-top: 50px;
+    padding-bottom:10px;
+}
+
+section h2{
+    margin-bottom: 0px;
+    color: #373435;
+    font: 32px "Source Sans Bold", Tahoma, sans-serif;
+}
+
+section p{
+    margin-top: 5px;
+    font:  18px "Source Sans Regular", Tahoma, sans-serif;
+}
+
+div.buttonRow{
+    background: transparent url(../images/stripe.png);
+    margin: 40px auto 0px;
+    width: 95%;
+}
+
+div.button{
+    padding: 10px 15px 15px;
+    background-color:#ebebeb;
+    display:inline-block;
+}
+
+div.button a{
+    font: 16px "Source Sans Bold", Tahoma, sans-serif;
+    text-decoration: none;
+    color: white;
+    background-color: #ed3237;
+    padding: 10px 15px;
+    border-radius: 7px;
+    box-shadow: -6px 6px rgba(0,0,0,0.1);
+}
+
+div.cardsRow {
+    width: 95%;
+    margin: 10px auto;
+}
+
+
+div.cardsRow div.card + div.card{
+    margin-left:5%;
+}
+
+div.card {
+    display: inline-block;
+    float: left;
+    width:30%;
+}
+
+div.cardImg {
+    float:left;
+    width:25%;
+}
+
+div.cardImg img {
+    border-radius: 5px 0px 5px 5px;
+    box-shadow: -6px 6px rgba(0,0,0,0.1);
+    padding: 10px;
+    background-color: #373435;
+}
+div.cardInfo{
+    width: 60%;
+    margin-left:5%;
+}
+
+div.cardInfo h3{
+
+}
+
+div.cardInfo p{
+
 }
