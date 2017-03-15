@@ -6,16 +6,16 @@ body {
 }
 
 @font-face {
-    font-family: 'Source Sans Black';
+    font-family: "Source Sans Black";
     src: url("../fonts/SourceSansPro-Black.ttf") format("truetype");
 }
 
-@font-face{
+@font-face {
     font-family: "Source Sans Regular";
     src: url("../fonts/SourceSansPro-Regular.ttf") format("truetype");
 }
 
-@font-face{
+@font-face {
     font-family: "Source Sans Bold";
     src: url("../fonts/SourceSansPro-Bold.ttf") format("truetype");
 }
@@ -28,7 +28,7 @@ body {
     border-radius: 7px;
 }
 
-header{
+header {
     background-color: #ebebeb;
     display: inline-block;
     padding: 0 30px;
@@ -45,11 +45,12 @@ header h1{
 nav {
     margin: 20px auto;
 }
+
 nav a {
     text-decoration: none;
 }
 
-nav ul {
+nav > ul {
     margin: 0;
     padding: 0;
 }
@@ -85,11 +86,11 @@ img {
     max-height: 100%;
 }
 
-div.slider {
+.slider {
     border-radius: 7px 0px 7px 7px;
 }
 
-div.slider img {
+.slider img {
     width: 95%;
     align: center;
     box-shadow: -11px 11px rgba(0,0,0,0.1);
@@ -97,35 +98,35 @@ div.slider img {
     margin: 0px auto 11px;
 }
 
-section{
+section {
     margin-top: 50px;
     padding-bottom:10px;
 }
 
-section h2{
+section h2 {
     margin-bottom: 0px;
     color: #373435;
     font: 32px "Source Sans Bold", Tahoma, sans-serif;
 }
 
-section p{
+section p {
     margin-top: 5px;
     font:  18px "Source Sans Regular", Tahoma, sans-serif;
 }
 
-div.buttonRow{
+.buttonRow {
     background: transparent url(../images/stripe.png);
     margin: 40px auto 0px;
     width: 95%;
 }
 
-div.button{
+.button {
     padding: 10px 15px 15px;
     background-color:#ebebeb;
     display:inline-block;
 }
 
-div.button a{
+.button a {
     font: 16px "Source Sans Bold", Tahoma, sans-serif;
     text-decoration: none;
     color: white;
@@ -135,42 +136,62 @@ div.button a{
     box-shadow: -6px 6px rgba(0,0,0,0.1);
 }
 
-div.cardsRow {
+.cardsRow {
+    overflow: hidden;
     width: 95%;
     margin: 10px auto;
 }
 
 
-div.cardsRow div.card + div.card{
+.cardsRow div.card + div.card {
     margin-left:5%;
 }
 
-div.card {
+.card {
     display: inline-block;
     float: left;
-    width:30%;
+    width: 30%;
 }
 
-div.cardImg {
+.cardImg {
+    display: inline-block;
     float:left;
     width:25%;
 }
 
-div.cardImg img {
+.cardImg img {
     border-radius: 5px 0px 5px 5px;
     box-shadow: -6px 6px rgba(0,0,0,0.1);
     padding: 10px;
     background-color: #373435;
 }
-div.cardInfo{
+.cardInfo {
+    display: inline-block;
     width: 60%;
     margin-left:5%;
+    text-align: left;
 }
 
-div.cardInfo h3{
-
+.cardInfo h3{
+    margin-top: 0;
+    width: 70%;
+    text-transform: uppercase;
+    font: 16px "Source Sans Bold", Tahoma, sans-serif;
+    color: #373435;
 }
 
-div.cardInfo p{
+.cardInfo p{
+    font: 14px "Source Sans Regular", Tahoma, sans-serif;
+}
 
+.cardInfo a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 16px "Source Sans Bold", Tahoma, sans-serif;
+    color: #373435;
+}
+
+.cardInfo .arrow {
+    color: red;
+    font: 16px "Source Sans Bold", Tahoma, sans-serif;
 }
