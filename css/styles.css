@@ -1,3 +1,4 @@
+/* Document style */
 body {
     color: #676364;
     font: 14px Source Sans Regular, Tahoma, sans-serif;
@@ -20,21 +21,23 @@ body {
     src: url("../fonts/SourceSansPro-Bold.ttf") format("truetype");
 }
 
+/* Container */
 #wrapper {
     text-align: center;
-    max-width: 960px;
+    max-width: 1024px;
     margin: 100px auto;
     background-color: #ebebeb;
     border-radius: 7px;
 }
 
+/* Header */
 header {
     background-color: #ebebeb;
     display: inline-block;
     padding: 0 30px;
     margin-top: -50px;
     border-radius: 7px;
-    box-shadow: -11px 11px 0px 0px rgba(0,0,0,0.1);
+    box-shadow: -11px 11px 0 0 rgba(0,0,0,0.1);
 }
 
 header h1{
@@ -42,6 +45,7 @@ header h1{
     font: 40px "Source Sans Black", Tahoma, sans-serif;
 }
 
+/* Navigation */
 nav {
     margin: 20px auto;
 }
@@ -63,7 +67,7 @@ nav li {
 
 .menu li {
     display: inline-block;
-    padding: 10px 0px;
+    padding: 10px 0;
     margin: 10px 0;
     border-top: 1px #d2d2d2 solid;
     border-bottom: 1px #d2d2d2 solid;
@@ -81,13 +85,14 @@ nav li {
     color: #909090;
 }
 
+/* Slider */
 img {
     max-width:100%;
     max-height: 100%;
 }
 
 .slider {
-    border-radius: 7px 0px 7px 7px;
+    border-radius: 7px 0 7px 7px;
 }
 
 .slider img {
@@ -95,18 +100,20 @@ img {
     align: center;
     box-shadow: -11px 11px rgba(0,0,0,0.1);
     border-radius: inherit;
-    margin: 0px auto 11px;
+    margin: 0 auto 11px;
 }
 
+/* Sections */
 section {
     margin-top: 50px;
-    padding-bottom:10px;
+    padding-bottom: 10px;
 }
 
 section h2 {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     color: #373435;
     font: 32px "Source Sans Bold", Tahoma, sans-serif;
+    text-transform: uppercase;
 }
 
 section p {
@@ -114,19 +121,20 @@ section p {
     font:  18px "Source Sans Regular", Tahoma, sans-serif;
 }
 
-.buttonRow {
+/* Button rows */
+.button-row {
     background: transparent url(../images/stripe.png);
-    margin: 40px auto 0px;
+    margin: 40px auto 0;
     width: 95%;
 }
 
-.button {
+.button-attention {
     padding: 10px 15px 15px;
     background-color:#ebebeb;
     display:inline-block;
 }
 
-.button a {
+.button-attention a {
     font: 16px "Source Sans Bold", Tahoma, sans-serif;
     text-decoration: none;
     color: white;
@@ -136,43 +144,47 @@ section p {
     box-shadow: -6px 6px rgba(0,0,0,0.1);
 }
 
-.cardsRow {
+/* News cards */
+.cards-row {
     overflow: hidden;
     width: 95%;
     margin: 10px auto;
 }
 
 
-.cardsRow div.card + div.card {
+.cards-row .card + .card {
     margin-left:5%;
 }
 
 .card {
-    display: inline-block;
     float: left;
+    display: inline-block;
     width: 30%;
 }
 
-.cardImg {
+.card-img {
     display: inline-block;
     float:left;
     width:25%;
+    font-size: 24px;
 }
 
-.cardImg img {
-    border-radius: 5px 0px 5px 5px;
-    box-shadow: -6px 6px rgba(0,0,0,0.1);
-    padding: 10px;
+.card-img > .fa {
+    padding: 20px;
     background-color: #373435;
+    color: #ffffff;
+    border-radius: 5px 0 5px 5px;
+    box-shadow: -6px 6px rgba(0,0,0,0.1);
 }
-.cardInfo {
+
+.card-info {
     display: inline-block;
     width: 60%;
     margin-left:5%;
     text-align: left;
 }
 
-.cardInfo h3{
+.card-info h3 {
     margin-top: 0;
     width: 70%;
     text-transform: uppercase;
@@ -180,18 +192,62 @@ section p {
     color: #373435;
 }
 
-.cardInfo p{
+.card-info p {
     font: 14px "Source Sans Regular", Tahoma, sans-serif;
 }
 
-.cardInfo a{
+.info-link {
+    vertical-align: bottom;
     text-decoration: none;
+    text-transform: uppercase;
+    font: 16px "Source Sans Bold", Tahoma, sans-serif;
+    letter-spacing: 0.1em;
+    color: #373435;
+}
+
+.info-link .fa.fa-chevron-right {
+    color: #ff0036;
+    font-size: 13px ;
+}
+
+.line {
+    margin: 50px auto 0;
+    border-top: 1px solid #cccccc;
+    width: 95%;
+}
+
+/* Pages row */
+.pages-row {
+    align-content: center;
+    margin: 10px auto;
+}
+
+.page {
+    padding-bottom: 20px;
+    display: inline-block;
+    width: 20%;
+    background-color: #e2e2e2;
+    border-radius: 7px 0 7px 7px;
+    box-shadow: -6px 6px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.pages-row .page + .page {
+    margin-left: 5%;
+}
+
+.page > h3,
+.page > p,
+.page > a {
+    margin-left: 10%;
+}
+
+.page h3 {
     text-transform: uppercase;
     font: 16px "Source Sans Bold", Tahoma, sans-serif;
     color: #373435;
 }
 
-.cardInfo .arrow {
-    color: red;
-    font: 16px "Source Sans Bold", Tahoma, sans-serif;
+.page p {
+    font: 14px "Source Sans Regular", Tahoma, sans-serif;
 }
