@@ -312,3 +312,33 @@ footer > p {
     width: 12%;
     vertical-align: top;
 }
+
+/* Overflow for p */
+.page h3 {
+    overflow: hidden;
+    position: relative;
+    /* use this value to count block height */
+    line-height: 1.2em;
+    /* max-height = line-height (1.2) * lines max number (3) */
+    max-height: 2.4em;
+    text-align: justify;
+    margin-right: -1em;
+    padding-right: 1em;
+}
+
+.page h3:before {
+    content: '...';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.page h3:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: #ebebeb;
+}
