@@ -132,6 +132,7 @@ section > p {
 
 .button-attention {
     padding: 10px 15px 15px;
+    vertical-align: top;
     background-color:#ebebeb;
     display:inline-block;
 }
@@ -287,4 +288,27 @@ footer > p {
     color: #ebebeb;
     text-align: center;
     font: 16px "Source Sans Regular", Tahoma, sans-serif;
+}
+
+/* New button row*/
+.new-button-row {
+    margin: 40px auto 0;
+    width: 95%;
+}
+
+.line-col {
+    width: 42%;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.new-line {
+    margin: 0 auto;
+    height: 10px;
+    border-top: 1px solid #cccccc;
+}
+
+.new {
+    width: 12%;
+    vertical-align: top;
 }
