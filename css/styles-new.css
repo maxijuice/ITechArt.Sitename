@@ -1,0 +1,338 @@
+/* Document style */
+body {
+    color: #676364;
+    font: 14px Source Sans Regular, Tahoma, sans-serif;
+    margin: 0;
+    background: #282828 url("../images/bg-main.png") repeat left top;
+}
+
+@font-face {
+    font-family: "Source Sans Black";
+    src: url("../fonts/SourceSansPro-Black.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Source Sans Regular";
+    src: url("../fonts/SourceSansPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Source Sans Bold";
+    src: url("../fonts/SourceSansPro-Bold.ttf") format("truetype");
+}
+
+/* Container */
+#wrapper {
+    padding-bottom: 50px;
+    margin: 100px auto 0;
+    text-align: center;
+    max-width: 1024px;
+    background-color: #ebebeb;
+    border-radius: 7px;
+}
+
+/* Header */
+header {
+    background-color: #ebebeb;
+    display: inline-block;
+    padding: 0 30px;
+    margin-top: -50px;
+    border-radius: 7px;
+    box-shadow: -11px 11px 0 0 rgba(0,0,0,0.1);
+}
+
+header h1{
+    color: #373435;
+    font: 40px "Source Sans Black", Tahoma, sans-serif;
+}
+
+/* Navigation */
+nav {
+    margin: 20px auto;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav > ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-position: inside;
+    font: 16px "Source Sans Regular", Tahoma, sans-serif;
+    padding: 10px;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 10px 0;
+    margin: 10px 0;
+    border-top: 1px #d2d2d2 solid;
+    border-bottom: 1px #d2d2d2 solid;
+}
+
+.menu li+li {
+    margin-left:30px;
+}
+
+.menu li.active {
+    color: #ed3237;
+}
+
+.menu a {
+    color: #909090;
+}
+
+/* Slider */
+img {
+    max-width:100%;
+    max-height: 100%;
+}
+
+.slider {
+    border-radius: 7px 0 7px 7px;
+}
+
+.slider img {
+    width: 95%;
+    align: center;
+    box-shadow: -11px 11px rgba(0,0,0,0.1);
+    border-radius: inherit;
+    margin: 0 auto 11px;
+}
+
+/* Sections */
+section {
+    margin-top: 50px;
+    padding-bottom: 10px;
+}
+
+section h2 {
+    margin-bottom: 0;
+    color: #373435;
+    font: 32px "Source Sans Bold", Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+
+section > p {
+    margin: 5px auto 40px;
+    width: 70%;
+    font:  18px "Source Sans Regular", Tahoma, sans-serif;
+}
+
+/* Button rows */
+.button-row {
+    background: transparent url(../images/stripe.png);
+    margin: 40px auto 0;
+    width: 95%;
+}
+
+.button-attention {
+    padding: 10px 15px 15px;
+    vertical-align: top;
+    background-color:#ebebeb;
+    display:inline-block;
+}
+
+.button-attention a {
+    padding: 10px 15px;
+    color: white;
+    background-color: #ed3237;
+    font: 16px "Source Sans Bold", Tahoma, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 7px;
+    box-shadow: -6px 6px rgba(0,0,0,0.1);
+}
+
+/* News cards */
+.cards-row {
+    overflow: hidden;
+    width: 95%;
+    margin: 10px auto;
+}
+
+
+.cards-row .after-card + .card {
+    margin-left:5%;
+}
+
+.card {
+    float: left;
+    display: inline-block;
+    width: 30%;
+}
+
+.card-img {
+    display: inline-block;
+    float:left;
+    width:25%;
+    font-size: 24px;
+}
+
+.card-img > .fa {
+    padding: 20px;
+    background-color: #373435;
+    color: #ffffff;
+    border-radius: 5px 0 5px 5px;
+    box-shadow: -6px 6px rgba(0,0,0,0.1);
+}
+
+.card-info {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+}
+
+.card-title {
+    display: inline-block;
+    width: 70%;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.card-span {
+    width: 25%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+}
+
+.card-description {
+    width: 70%;
+    margin-left: 5%;
+    display: inline-block;
+}
+
+.card-title h3 {
+    margin-top: 0;
+    width: 70%;
+    text-transform: uppercase;
+    font: 16px "Source Sans Bold", Tahoma, sans-serif;
+    color: #373435;
+}
+
+.card-info p {
+    margin: 0 auto 20px;
+    font: 14px "Source Sans Regular", Tahoma, sans-serif;
+}
+
+.after-card {
+    display: none;
+}
+
+.info-link {
+    vertical-align: bottom;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 16px "Source Sans Bold", Tahoma, sans-serif;
+    letter-spacing: 0.1em;
+    color: #373435;
+}
+
+.info-link .fa.fa-chevron-right {
+    color: #ff0036;
+    font-size: 13px ;
+}
+
+.line {
+    margin: 50px auto 0;
+    border-top: 1px solid #cccccc;
+    width: 95%;
+}
+
+/* Pages row */
+.pages-row {
+    align-content: center;
+    margin: 10px auto;
+}
+
+.page {
+    padding-bottom: 20px;
+    display: inline-block;
+    width: 20%;
+    background-color: #e2e2e2;
+    border-radius: 7px 0 7px 7px;
+    box-shadow: -6px 6px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.pages-row .page + .page {
+    margin-left: 5%;
+}
+
+.page > h3,
+.page > p,
+.page > a {
+    margin-left: 10%;
+}
+
+.page h3 {
+    text-transform: uppercase;
+    font: 16px "Source Sans Bold", Tahoma, sans-serif;
+    color: #373435;
+}
+
+.page p {
+    font: 14px "Source Sans Regular", Tahoma, sans-serif;
+}
+
+.tag-cloud {
+    align-content: center;
+    margin: -30px auto 10px;
+}
+.tag-cloud h3 {
+    margin: -10px 0px 20px;
+    color: #ff0036;;
+    text-transform: uppercase;
+    font: 16px "Source Sans Bold", Tahoma, sans-serif;
+}
+
+.tag {
+    margin: 5px;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ebebeb;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.1);
+    box-shadow: -5px 5px rgba(0,0,0,0.1);
+    text-transform: uppercase;
+    font: 16px "Source Sans Bold", Tahoma, sans-serif;
+}
+
+.footer {
+    margin: 50px auto;
+}
+
+footer > p {
+    margin: 30px auto;
+    color: #ebebeb;
+    text-align: center;
+    font: 16px "Source Sans Regular", Tahoma, sans-serif;
+}
+
+/* New button row*/
+.new-button-row {
+    margin: 40px auto 0;
+    width: 95%;
+}
+
+.line-col {
+    width: 42%;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.new-line {
+    margin: 0 auto;
+    height: 10px;
+    border-top: 1px solid #cccccc;
+}
+
+.new {
+    width: 12%;
+    vertical-align: top;
+}
