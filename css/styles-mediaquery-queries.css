@@ -1,5 +1,4 @@
 @media screen and (max-width: 840px) {
-
     /* Cards row */
     .card {
         display: block;
@@ -41,6 +40,10 @@
     .pages-row .page + .page {
         margin: 3em auto;
     }
+
+    .page p {
+        padding-right: 1em;
+    }
 }
 @media screen and (min-width: 500px) and (max-width: 840px) {
     .card-info {
@@ -52,11 +55,15 @@
     .page {
         display: inline-block;
         width: 40%;
-        margin: 3em auto 0;
+        margin: 2%;
     }
 
     .pages-row .page + .page {
-        margin: 0 auto;
+        margin: 0;
+    }
+
+    .page-img > img {
+        width: 100%;
     }
 }
 

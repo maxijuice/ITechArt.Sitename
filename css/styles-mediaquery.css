@@ -271,6 +271,7 @@ section > p {
 }
 
 .page h3 {
+    padding-right: 0.5em;
     text-transform: uppercase;
     font: 16px "Source Sans Bold", Tahoma, sans-serif;
     color: #373435;
@@ -317,13 +318,14 @@ footer > p {
 /* New button row*/
 .new-button-row {
     margin: 40px auto 0;
+    position: relative;
     width: 95%;
 }
 
 .line-col {
-    width: 42%;
-    display: inline-block;
     margin-top: 10px;
+    width: 100%;
+    display: inline-block;
 }
 
 .new-line {
@@ -333,6 +335,10 @@ footer > p {
 }
 
 .new {
-    width: 12%;
-    vertical-align: top;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+    position: absolute;
 }
