@@ -180,6 +180,10 @@ img {
 }
 
 .card-info p {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     font: 14px "Source Sans Regular", Tahoma, sans-serif;
 }
 
@@ -219,17 +223,23 @@ img {
 .page h3,
 .page p,
 .page a {
-    margin-left: 10%;
+    margin-left:10%;
+    margin-right: 5%;
 }
 
 .page h3 {
-    padding: 2em 1em 0.5em;
+    height: 90px;
+    padding: 2em 0 0.5em;
     color: #373435;
     text-transform: uppercase;
     font: 16px "Source Sans Bold", Tahoma, sans-serif;
 }
 
 .page p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     font: 14px "Source Sans Regular", Tahoma, sans-serif;
 }
 
@@ -262,7 +272,7 @@ img {
 }
 
 .footer {
-    margin: 50px auto;
+    margin: 50px auto 0;
 }
 
 .footer > p {
@@ -292,6 +302,7 @@ img {
 }
 
 .button-attention.new {
+    top: 0;
     left: 0;
     right: 0;
     margin-left: auto;
