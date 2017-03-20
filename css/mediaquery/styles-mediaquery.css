@@ -3,22 +3,22 @@ body {
     color: #676364;
     font: 14px Source Sans Regular, Tahoma, sans-serif;
     margin: 0;
-    background: #282828 url("../images/bg-main.png") repeat left top;
+    background: #282828 url("../../images/bg-main.png") repeat left top;
 }
 
 @font-face {
     font-family: "Source Sans Black";
-    src: url("../fonts/SourceSansPro-Black.ttf") format("truetype");
+    src: url("../../fonts/SourceSansPro-Black.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Source Sans Regular";
-    src: url("../fonts/SourceSansPro-Regular.ttf") format("truetype");
+    src: url("../../fonts/SourceSansPro-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Source Sans Bold";
-    src: url("../fonts/SourceSansPro-Bold.ttf") format("truetype");
+    src: url("../../fonts/SourceSansPro-Bold.ttf") format("truetype");
 }
 
 /* Container */
@@ -124,12 +124,6 @@ section > p {
 }
 
 /* Button rows */
-.button-row {
-    background: transparent url(../images/stripe.png);
-    margin: 40px auto 0;
-    width: 95%;
-}
-
 .button-attention {
     padding: 10px 15px 15px;
     vertical-align: top;
@@ -156,7 +150,7 @@ section > p {
 }
 
 
-.cards-row .card + .card {
+.cards-row .after-card + .card {
     margin-left:5%;
 }
 
@@ -183,12 +177,31 @@ section > p {
 
 .card-info {
     display: inline-block;
-    width: 60%;
-    margin-left:5%;
+    width: 100%;
     text-align: left;
 }
 
-.card-info h3 {
+.card-title {
+    display: inline-block;
+    width: 70%;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.card-span {
+    width: 25%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+}
+
+.card-description {
+    width: 70%;
+    margin-left: 5%;
+    display: inline-block;
+}
+
+.card-title h3 {
     margin-top: 0;
     width: 70%;
     text-transform: uppercase;
@@ -197,7 +210,12 @@ section > p {
 }
 
 .card-info p {
+    margin: 0 auto 20px;
     font: 14px "Source Sans Regular", Tahoma, sans-serif;
+}
+
+.after-card {
+    display: none;
 }
 
 .info-link {
@@ -247,6 +265,7 @@ section > p {
 }
 
 .page h3 {
+    padding-right: 0.5em;
     text-transform: uppercase;
     font: 16px "Source Sans Bold", Tahoma, sans-serif;
     color: #373435;
@@ -293,13 +312,14 @@ footer > p {
 /* New button row*/
 .new-button-row {
     margin: 40px auto 0;
+    position: relative;
     width: 95%;
 }
 
 .line-col {
-    width: 42%;
-    display: inline-block;
     margin-top: 10px;
+    width: 100%;
+    display: inline-block;
 }
 
 .new-line {
@@ -309,6 +329,10 @@ footer > p {
 }
 
 .new {
-    width: 12%;
-    vertical-align: top;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+    position: absolute;
 }

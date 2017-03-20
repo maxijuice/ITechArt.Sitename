@@ -1,28 +1,33 @@
 /* Document style */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     color: #676364;
     font: 14px Source Sans Regular, Tahoma, sans-serif;
     margin: 0;
-    background: #282828 url("../images/bg-main.png") repeat left top;
+    background: #282828 url("../../images/bg-main.png") repeat left top;
 }
 
 @font-face {
     font-family: "Source Sans Black";
-    src: url("../fonts/SourceSansPro-Black.ttf") format("truetype");
+    src: url("../../fonts/SourceSansPro-Black.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Source Sans Regular";
-    src: url("../fonts/SourceSansPro-Regular.ttf") format("truetype");
+    src: url("../../fonts/SourceSansPro-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Source Sans Bold";
-    src: url("../fonts/SourceSansPro-Bold.ttf") format("truetype");
+    src: url("../../fonts/SourceSansPro-Bold.ttf") format("truetype");
 }
 
 /* Container */
-#wrapper {
+.container {
     padding-bottom: 50px;
     margin: 100px auto 0;
     text-align: center;
@@ -105,31 +110,25 @@ img {
 }
 
 /* Sections */
-section {
+.intro {
     margin-top: 50px;
     padding-bottom: 10px;
 }
 
-section h2 {
+.intro > h2 {
     margin-bottom: 0;
     color: #373435;
     font: 32px "Source Sans Bold", Tahoma, sans-serif;
     text-transform: uppercase;
 }
 
-section > p {
+.intro > p {
     margin: 5px auto 40px;
     width: 70%;
     font:  18px "Source Sans Regular", Tahoma, sans-serif;
 }
 
 /* Button rows */
-.button-row {
-    background: transparent url(../images/stripe.png);
-    margin: 40px auto 0;
-    width: 95%;
-}
-
 .button-attention {
     padding: 10px 15px 15px;
     vertical-align: top;
@@ -149,27 +148,12 @@ section > p {
 }
 
 /* News cards */
-.cards-row {
-    overflow: hidden;
-    width: 95%;
-    margin: 10px auto;
-}
-
-
-.cards-row .after-card + .card {
-    margin-left:5%;
-}
-
 .card {
-    float: left;
-    display: inline-block;
-    width: 30%;
+    margin-bottom: 1em;
 }
 
 .card-img {
     display: inline-block;
-    float:left;
-    width:25%;
     font-size: 24px;
 }
 
@@ -183,45 +167,20 @@ section > p {
 
 .card-info {
     display: inline-block;
-    width: 100%;
     text-align: left;
 }
 
-.card-title {
-    display: inline-block;
-    width: 70%;
-    text-align: left;
-    margin-left: 5%;
-}
-
-.card-span {
-    width: 25%;
-    height: 100%;
-    display: inline-block;
-    float: left;
-}
-
-.card-description {
-    width: 70%;
-    margin-left: 5%;
-    display: inline-block;
-}
-
-.card-title h3 {
+.card-header h3 {
     margin-top: 0;
     width: 70%;
     text-transform: uppercase;
     font: 16px "Source Sans Bold", Tahoma, sans-serif;
     color: #373435;
+    text-align: left;
 }
 
 .card-info p {
-    margin: 0 auto 20px;
     font: 14px "Source Sans Regular", Tahoma, sans-serif;
-}
-
-.after-card {
-    display: none;
 }
 
 .info-link {
@@ -239,51 +198,49 @@ section > p {
 }
 
 .line {
-    margin: 50px auto 0;
+    margin: 10px auto 0;
     border-top: 1px solid #cccccc;
     width: 95%;
 }
 
-/* Pages row */
-.pages-row {
-    align-content: center;
-    margin: 10px auto;
-}
+.row-border {
+     margin-top: 40px;
+ }
 
+/* Pages row */
 .page {
     padding-bottom: 20px;
-    display: inline-block;
-    width: 20%;
     background-color: #e2e2e2;
     border-radius: 7px 0 7px 7px;
     box-shadow: -6px 6px rgba(0,0,0,0.1);
     text-align: left;
 }
 
-.pages-row .page + .page {
-    margin-left: 5%;
-}
-
-.page > h3,
-.page > p,
-.page > a {
+.page h3,
+.page p,
+.page a {
     margin-left: 10%;
 }
 
 .page h3 {
-    padding-right: 0.5em;
+    padding: 2em 1em 0.5em;
+    color: #373435;
     text-transform: uppercase;
     font: 16px "Source Sans Bold", Tahoma, sans-serif;
-    color: #373435;
 }
 
 .page p {
     font: 14px "Source Sans Regular", Tahoma, sans-serif;
 }
 
+.page-img > img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
 .tag-cloud {
     align-content: center;
-    margin: -30px auto 10px;
+    margin: -30px auto 40px;
 }
 .tag-cloud h3 {
     margin: -10px 0px 20px;
@@ -293,8 +250,8 @@ section > p {
 }
 
 .tag {
-    margin: 5px;
     display: inline-block;
+    margin: 5px;
     padding: 8px 16px;
     background-color: #ebebeb;
     border-radius: 5px;
@@ -308,7 +265,7 @@ section > p {
     margin: 50px auto;
 }
 
-footer > p {
+.footer > p {
     margin: 30px auto;
     color: #ebebeb;
     text-align: center;
@@ -317,7 +274,7 @@ footer > p {
 
 /* New button row*/
 .new-button-row {
-    margin: 40px auto 0;
+    margin: 0 auto;
     position: relative;
     width: 95%;
 }
@@ -334,11 +291,11 @@ footer > p {
     border-top: 1px solid #cccccc;
 }
 
-.new {
+.button-attention.new {
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 8em;
+    width: 11em;
     position: absolute;
 }
