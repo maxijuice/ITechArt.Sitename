@@ -1,9 +1,13 @@
 /* Document style */
+:root {
+    --main-bg-color: #ebebeb;
+    --main-heading-color: #373435;
+}
 body {
-    color: #676364;
-    font: 14px Source Sans Regular, Tahoma, sans-serif;
     margin: 0;
+    color: #676364;
     background: #282828 url("../../images/bg-main.png") repeat left top;
+    font: 14px Source Sans Regular, Tahoma, sans-serif;
 }
 
 @font-face {
@@ -27,51 +31,48 @@ body {
     margin: 100px auto 0;
     text-align: center;
     max-width: 1024px;
-    background-color: #ebebeb;
+    background-color:  var(--main-bg-color);
     border-radius: 7px;
 }
 
 /* Header */
-header {
-    background-color: #ebebeb;
+.page-heading {
     display: inline-block;
-    padding: 0 30px;
+    padding: 30px;
     margin-top: -50px;
     border-radius: 7px;
     box-shadow: -11px 11px 0 0 rgba(0,0,0,0.1);
+    background-color:  var(--main-bg-color);
 }
 
-header h1{
-    color: #373435;
+.page-heading {
+    color: var(--main-heading-color);
     font: 40px "Source Sans Black", Tahoma, sans-serif;
 }
 
 /* Navigation */
-nav {
+.menu {
     margin: 20px auto;
+    padding: 0 20px;
 }
 
-nav a {
+.menu a {
     text-decoration: none;
 }
 
-nav > ul {
+.menu ul {
     margin: 0;
     padding: 0;
 }
 
-nav li {
-    list-style-position: inside;
-    font: 16px "Source Sans Regular", Tahoma, sans-serif;
-    padding: 10px;
-}
-
 .menu li {
+    list-style-position: inside;
     display: inline-block;
     padding: 10px 0;
     margin: 10px 0;
     border-top: 1px #d2d2d2 solid;
     border-bottom: 1px #d2d2d2 solid;
+    font: 16px "Source Sans Regular", Tahoma, sans-serif;
 }
 
 .menu li+li {
@@ -96,7 +97,7 @@ img {
     border-radius: 7px 0 7px 7px;
 }
 
-.slider img {
+.slider-img {
     width: 95%;
     box-shadow: -11px 11px rgba(0,0,0,0.1);
     border-radius: inherit;
@@ -104,19 +105,19 @@ img {
 }
 
 /* Sections */
-section {
+.content-section {
     margin-top: 50px;
     padding-bottom: 10px;
 }
 
-section h2 {
+.section-heading {
     margin-bottom: 0;
-    color: #373435;
+    color: var(--main-heading-color);
     font: 32px "Source Sans Bold", Tahoma, sans-serif;
     text-transform: uppercase;
 }
 
-section > p {
+.section-intro {
     margin: 5px auto 40px;
     width: 70%;
     font:  18px "Source Sans Regular", Tahoma, sans-serif;
@@ -126,7 +127,7 @@ section > p {
 .button-attention {
     padding: 10px 15px 15px;
     vertical-align: top;
-    background-color:#ebebeb;
+    background-color: var(--main-bg-color);
     display:inline-block;
 }
 
@@ -148,7 +149,6 @@ section > p {
     margin: 10px auto;
 }
 
-
 .cards-row .after-card + .card {
     margin-left:5%;
 }
@@ -168,7 +168,7 @@ section > p {
 
 .card-img > .fa {
     padding: 20px;
-    background-color: #373435;
+    background-color: var(--main-heading-color);
     color: #ffffff;
     border-radius: 5px 0 5px 5px;
     box-shadow: -6px 6px rgba(0,0,0,0.1);
@@ -205,7 +205,7 @@ section > p {
     width: 70%;
     text-transform: uppercase;
     font: 16px "Source Sans Bold", Tahoma, sans-serif;
-    color: #373435;
+    color: var(--main-heading-color);
 }
 
 .card-info p {
@@ -223,7 +223,7 @@ section > p {
     text-transform: uppercase;
     font: 16px "Source Sans Bold", Tahoma, sans-serif;
     letter-spacing: 0.1em;
-    color: #373435;
+    color: var(--main-heading-color);
 }
 
 .info-link .fa.fa-chevron-right {
@@ -238,39 +238,45 @@ section > p {
 }
 
 /* Pages row */
-.pages-row {
+.news-row {
     align-content: center;
     margin: 10px auto;
 }
 
-.page {
-    padding-bottom: 20px;
+.news {
     display: inline-block;
+    min-height: 350px;
+    padding-bottom: 20px;
     width: 20%;
-    background-color: #e2e2e2;
     border-radius: 7px 0 7px 7px;
     box-shadow: -6px 6px rgba(0,0,0,0.1);
+    background-color: #e2e2e2;
     text-align: left;
 }
 
-.pages-row .page + .page {
+.news-row .news + .news {
     margin-left: 5%;
 }
 
-.page > h3,
-.page > p,
-.page > a {
+.news-heading,
+.news-intro,
+.news .info-link {
     margin-left: 10%;
 }
 
-.page h3 {
+.news-heading {
+    min-height: 60px;
     padding-right: 0.5em;
     text-transform: uppercase;
     font: 16px "Source Sans Bold", Tahoma, sans-serif;
-    color: #373435;
+    color: var(--main-heading-color);
 }
 
-.page p {
+.news-img {
+    width: 100%;
+}
+
+.news-intro {
     font: 14px "Source Sans Regular", Tahoma, sans-serif;
 }
 
@@ -279,7 +285,7 @@ section > p {
     margin: -30px auto 10px;
 }
 
-.tag-cloud h3 {
+.tag-cloud-heading {
     margin: -10px 0 20px;
     color: #ff0036;;
     text-transform: uppercase;
@@ -290,7 +296,7 @@ section > p {
     margin: 5px;
     display: inline-block;
     padding: 8px 16px;
-    background-color: #ebebeb;
+    background-color: var(--main-bg-color);
     border-radius: 5px;
     border: 2px solid rgba(0,0,0,0.1);
     box-shadow: -5px 5px rgba(0,0,0,0.1);
@@ -298,28 +304,23 @@ section > p {
     font: 16px "Source Sans Bold", Tahoma, sans-serif;
 }
 
-.footer {
-    margin: 50px auto;
-}
-
-footer > p {
+.footer-details {
     margin: 30px auto;
-    color: #ebebeb;
+    color:  var(--main-bg-color);
     text-align: center;
     font: 16px "Source Sans Regular", Tahoma, sans-serif;
 }
 
-/* New button row*/
 .new-button-row {
-    margin: 40px auto 0;
     position: relative;
+    margin: 40px auto 0;
     width: 95%;
 }
 
 .line-col {
+    display: inline-block;
     margin-top: 10px;
     width: 100%;
-    display: inline-block;
 }
 
 .new-line {
@@ -332,8 +333,8 @@ footer > p {
     top: 0;
     left: 0;
     right: 0;
+    position: absolute;
     margin-left: auto;
     margin-right: auto;
     width: 9em;
-    position: absolute;
 }

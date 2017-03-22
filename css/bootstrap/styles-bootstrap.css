@@ -212,7 +212,7 @@ img {
  }
 
 /* Pages row */
-.page {
+.news {
     padding-bottom: 20px;
     background-color: #e2e2e2;
     border-radius: 7px 0 7px 7px;
@@ -220,14 +220,14 @@ img {
     text-align: left;
 }
 
-.page h3,
-.page p,
-.page a {
+.news h3,
+.news p,
+.news a {
     margin-left:10%;
     margin-right: 5%;
 }
 
-.page h3 {
+.news h3 {
     height: 90px;
     padding: 2em 0 0.5em;
     color: #373435;
@@ -235,7 +235,7 @@ img {
     font: 16px "Source Sans Bold", Tahoma, sans-serif;
 }
 
-.page p {
+.news p {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;

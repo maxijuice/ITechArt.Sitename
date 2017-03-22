@@ -259,13 +259,13 @@ section > p {
     border-top: 1px solid #cccccc;
 }
 
-.pages-row {
+.news-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.page {
+.news {
     flex: 1 1 auto;
     flex-basis: 300px;
     min-width: 200px;
@@ -282,14 +282,14 @@ section > p {
     width: 100%;
 }
 
-.page > h3,
-.page > p,
-.page > a {
+.news > h3,
+.news > p,
+.news > a {
     margin-left: 10%;
     margin-right: 5%;
 }
 
-.page h3 {
+.news h3 {
     text-transform: uppercase;
     font: 16px "Source Sans Bold", Tahoma, sans-serif;
     color: #373435;

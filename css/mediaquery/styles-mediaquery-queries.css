@@ -23,25 +23,25 @@
     }
 
     /* Pages  row */
-    .page {
+    .news {
         display: block;
         width: 95%;
         margin: 3em auto;
     }
 
-    .page-img > img {
+    .news-img {
         width: 100%;
     }
 
-    .page h3 {
+    .news-heading {
         padding: 1em 0;
     }
 
-    .pages-row .page + .page {
+    .news-row .news + .news {
         margin: 3em auto;
     }
 
-    .page p {
+    .news-intro {
         padding-right: 1em;
     }
 }
@@ -52,29 +52,29 @@
 }
 
 @media screen and (min-width: 720px) and (max-width: 960px){
-    .page {
+    .news {
         display: inline-block;
         width: 40%;
         margin: 2%;
     }
 
-    .pages-row .page + .page {
+    .news-row .news + .news {
         margin: 0;
     }
 
-    .page-img > img {
+    .page-img {
         width: 100%;
     }
 }
 
 @media screen and (min-width: 420px) and (max-width: 720px) {
-    .page {
+    .news {
         width: 60%;
     }
 }
 
 @media screen and (max-width: 420px) {
-    .page {
+    .news {
         width: 80%;
     }
 }
