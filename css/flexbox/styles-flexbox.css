@@ -289,6 +289,12 @@ section > p {
     margin-right: 5%;
 }
 
+.page h3 {
+    text-transform: uppercase;
+    font: 16px "Source Sans Bold", Tahoma, sans-serif;
+    color: #373435;
+}
+
 section > h3 {
     margin-top: -30px;
     color: #ff0036;;
