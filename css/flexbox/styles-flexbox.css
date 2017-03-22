@@ -1,5 +1,9 @@
 /* Document style */
 body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
     color: #676364;
     font: 14px Source Sans Regular, Tahoma, sans-serif;
     margin: 0;
@@ -72,7 +76,7 @@ nav li {
 }
 
 .menu li {
-    flex-basis: 5em;
+    flex: 0 1 4em;
     padding: 10px 0;
     margin: 10px 0;
     border-top: 1px #d2d2d2 solid;
@@ -103,13 +107,19 @@ img {
 
 .slider img {
     width: 95%;
-    align: center;
     box-shadow: -11px 11px rgba(0,0,0,0.1);
     border-radius: inherit;
     margin: 0 auto 11px;
 }
 
+section {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
 section h2 {
+    margin-top: 2em;
     margin-bottom: 0;
     color: #373435;
     font: 32px "Source Sans Bold", Tahoma, sans-serif;
@@ -124,10 +134,11 @@ section > p {
 
 /* Button rows */
 .button-attention {
-    padding: 10px 15px 15px;
-    vertical-align: top;
+    padding: 0 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
     background-color:#ebebeb;
-    display:inline-block;
 }
 
 .button-attention a {
@@ -142,15 +153,16 @@ section > p {
 }
 
 .new-button-row {
-    margin: 40px auto 0;
     position: relative;
+    display: flex;
+    flex-flow: column;
+    margin: 40px auto 0;
     width: 95%;
 }
 
 .line-col {
     margin-top: 10px;
-    width: 100%;
-    display: inline-block;
+    align-self: stretch;
 }
 
 .new-line {
@@ -183,6 +195,7 @@ section > p {
     display: flex;
     flex-flow: row wrap;
     padding: 0 3%;
+    align-self: stretch;
 }
 
 .card-img {
@@ -241,9 +254,9 @@ section > p {
 }
 
 .line {
-    margin: 50px auto 0;
+    margin: 50px 2.5% auto;
+    align-self: stretch;
     border-top: 1px solid #cccccc;
-    width: 95%;
 }
 
 .pages-row {
@@ -274,4 +287,39 @@ section > p {
 .page > a {
     margin-left: 10%;
     margin-right: 5%;
+}
+
+section > h3 {
+    margin-top: -30px;
+    color: #ff0036;;
+    text-transform: uppercase;
+    font: 16px "Source Sans Bold", Tahoma, sans-serif;
+}
+
+.tag {
+    margin: 5px;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ebebeb;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.1);
+    box-shadow: -5px 5px rgba(0,0,0,0.1);
+    text-transform: uppercase;
+    font: 16px "Source Sans Bold", Tahoma, sans-serif;
+}
+
+footer {
+    flex: 1 1 auto;
+    align-self: stretch;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    text-align: center;
+    flex-basis: 120px;
+    align-items: center;
+}
+
+footer > p {
+    color: #ebebeb;
+    font: 16px "Source Sans Regular", Tahoma, sans-serif;
 }

@@ -98,7 +98,6 @@ img {
 
 .slider img {
     width: 95%;
-    align: center;
     box-shadow: -11px 11px rgba(0,0,0,0.1);
     border-radius: inherit;
     margin: 0 auto 11px;
@@ -279,8 +278,9 @@ section > p {
     align-content: center;
     margin: -30px auto 10px;
 }
+
 .tag-cloud h3 {
-    margin: -10px 0px 20px;
+    margin: -10px 0 20px;
     color: #ff0036;;
     text-transform: uppercase;
     font: 16px "Source Sans Bold", Tahoma, sans-serif;
