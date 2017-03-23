@@ -1,4 +1,10 @@
 /* Document style */
+:root {
+    --main-bg-color: #ebebeb;
+    --main-heading-color: #373435;
+    --box-shadow-color: rgba(0,0,0,0.1);
+}
+
 body {
     display: flex;
     flex-flow: column nowrap;
@@ -8,6 +14,11 @@ body {
     font: 14px Source Sans Regular, Tahoma, sans-serif;
     margin: 0;
     background: #282828 url("../../images/bg-main.png") repeat left top;
+}
+
+img {
+    max-width:100%;
+    max-height: 100%;
 }
 
 @font-face {
@@ -31,56 +42,44 @@ body {
     padding: 0 5px 50px;
     margin: 100px auto 0;
     text-align: center;
-    background-color: #ebebeb;
+    background-color: var(--main-bg-color);
     border-radius: 7px;
 }
 
 /* Header */
 header {
-    background-color: #ebebeb;
+    background-color: var(--main-bg-color);
     display: flex;
     justify-content: center;
 }
 
-header h1{
+.page-heading {
     padding: 20px 30px;
     margin-top: -50px;
-    box-shadow: -11px 11px 0 0 rgba(0,0,0,0.1);
-    background-color: #ebebeb;
-    color: #373435;
+    box-shadow: -11px 11px 0 0 var(--box-shadow-color);
+    background-color: var(--main-bg-color);
+    color: var(--main-heading-color);
     font: 40px "Source Sans Black", Tahoma, sans-serif;
     border-radius: 7px;
 }
 
 /* Navigation */
-nav {
-    margin: 0 auto 20px;
-}
-
-nav a {
-    text-decoration: none;
-}
-
-nav > ul {
+.menu {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin: 0;
+    margin: 0 auto 20px;
     padding: 0;
 }
 
-nav li {
-    list-style-type: none;
-    font: 16px "Source Sans Regular", Tahoma, sans-serif;
-    padding: 10px;
-}
-
 .menu li {
-    flex: 0 1 4em;
+    flex: 0 1 auto;
     padding: 10px 0;
     margin: 10px 0;
     border-top: 1px #d2d2d2 solid;
     border-bottom: 1px #d2d2d2 solid;
+    list-style-type: none;
+    font: 16px "Source Sans Regular", Tahoma, sans-serif;
 }
 
 .menu li+li {
@@ -93,40 +92,36 @@ nav li {
 
 .menu a {
     color: #909090;
+    text-decoration: none;
 }
 
 /* Slider */
-img {
-    max-width:100%;
-    max-height: 100%;
-}
-
 .slider {
     border-radius: 7px 0 7px 7px;
 }
 
 .slider img {
     width: 95%;
-    box-shadow: -11px 11px rgba(0,0,0,0.1);
+    box-shadow: -11px 11px var(--box-shadow-color);
     border-radius: inherit;
     margin: 0 auto 11px;
 }
 
-section {
+.content-section {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
 }
 
-section h2 {
+.section-heading {
     margin-top: 2em;
     margin-bottom: 0;
-    color: #373435;
+    color: var(--main-heading-color);
     font: 32px "Source Sans Bold", Tahoma, sans-serif;
     text-transform: uppercase;
 }
 
-section > p {
+.section-details{
     margin: 5px auto 40px;
     width: 70%;
     font:  18px "Source Sans Regular", Tahoma, sans-serif;
@@ -134,11 +129,11 @@ section > p {
 
 /* Button rows */
 .button-attention {
-    padding: 0 10px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    background-color:#ebebeb;
+    padding: 0 10px;
+    background-color: var(--main-bg-color);
 }
 
 .button-attention a {
@@ -149,14 +144,14 @@ section > p {
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 7px;
-    box-shadow: -6px 6px rgba(0,0,0,0.1);
+    box-shadow: -6px 6px var(--box-shadow-color);
 }
 
 .new-button-row {
     position: relative;
     display: flex;
     flex-flow: column;
-    margin: 40px auto 0;
+    margin: 30px auto;
     width: 95%;
 }
 
@@ -199,25 +194,20 @@ section > p {
 }
 
 .card-img {
-    font-size: 24px;
-}
-
-.card-img > .fa {
     padding: 20px;
-    background-color: #373435;
+    background-color: var(--main-heading-color);
     color: #ffffff;
     border-radius: 5px 0 5px 5px;
-    box-shadow: -6px 6px rgba(0,0,0,0.1);
+    box-shadow: -6px 6px var(--box-shadow-color);
+}
+
+.card-img.fa {
+    font-size: 24px;
 }
 
 .card-header {
     display: flex;
     justify-content: space-between;
-}
-
-.card-title {
-    flex: 0 1 70%;
-    text-align: left;
 }
 
 .card-info {
@@ -226,15 +216,17 @@ section > p {
     max-width: 70%;
 }
 
-.card-title h3 {
+.card-heading {
+    flex: 0 1 70%;
     margin-top: 0;
     width: 70%;
     text-transform: uppercase;
+    text-align: left;
     font: 16px "Source Sans Bold", Tahoma, sans-serif;
-    color: #373435;
+    color: var(--main-heading-color);
 }
 
-.card-info p {
+.card-details {
     margin: 0 auto 20px;
     font: 14px "Source Sans Regular", Tahoma, sans-serif;
 }
@@ -245,7 +237,7 @@ section > p {
     text-transform: uppercase;
     font: 16px "Source Sans Bold", Tahoma, sans-serif;
     letter-spacing: 0.1em;
-    color: #373435;
+    color: var(--main-heading-color);
 }
 
 .info-link .fa.fa-chevron-right {
@@ -269,33 +261,33 @@ section > p {
     flex: 1 1 auto;
     flex-basis: 300px;
     min-width: 200px;
-    max-width: 300px;
+    max-width: 250px;
     border-radius: 7px 0 7px 7px;
-    box-shadow: -6px 6px rgba(0,0,0,0.1);
+    box-shadow: -6px 6px var(--box-shadow-color);
     margin: 20px;
     padding-bottom: 20px;
     background-color: #e2e2e2;
     text-align: left;
 }
 
-.page-img > img {
+.news-img {
     width: 100%;
 }
 
-.news > h3,
-.news > p,
-.news > a {
+.news-heading,
+.news-details,
+.news .info-link {
     margin-left: 10%;
     margin-right: 5%;
 }
 
-.news h3 {
+.news-heading {
     text-transform: uppercase;
     font: 16px "Source Sans Bold", Tahoma, sans-serif;
-    color: #373435;
+    color: var(--main-heading-color);
 }
 
-section > h3 {
+.tag-cloud-heading {
     margin-top: -30px;
     color: #ff0036;;
     text-transform: uppercase;
@@ -306,15 +298,15 @@ section > h3 {
     margin: 5px;
     display: inline-block;
     padding: 8px 16px;
-    background-color: #ebebeb;
+    background-color: var(--main-bg-color);
     border-radius: 5px;
-    border: 2px solid rgba(0,0,0,0.1);
-    box-shadow: -5px 5px rgba(0,0,0,0.1);
+    border: 2px solid var(--box-shadow-color);
+    box-shadow: -5px 5px var(--box-shadow-color);
     text-transform: uppercase;
     font: 16px "Source Sans Bold", Tahoma, sans-serif;
 }
 
-footer {
+.footer {
     flex: 1 1 auto;
     align-self: stretch;
     display: flex;
@@ -325,7 +317,7 @@ footer {
     align-items: center;
 }
 
-footer > p {
-    color: #ebebeb;
+.footer-details {
+    color: var(--main-bg-color);
     font: 16px "Source Sans Regular", Tahoma, sans-serif;
 }

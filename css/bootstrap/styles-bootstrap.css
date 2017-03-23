@@ -17,6 +17,11 @@ body {
     background: #282828 url("../../images/bg-main.png") repeat left top;
 }
 
+img {
+    max-width:100%;
+    max-height: 100%;
+}
+
 @font-face {
     font-family: "Source Sans Black";
     src: url("../../fonts/SourceSansPro-Black.ttf") format("truetype");
@@ -83,11 +88,6 @@ body {
 }
 
 /* Slider */
-img {
-    max-width:100%;
-    max-height: 100%;
-}
-
 .slider {
     border-radius: 7px 0 7px 7px;
 }
@@ -196,7 +196,7 @@ img {
      margin-top: 40px;
  }
 
-/* Pages row */
+/* News row */
 .news {
     padding-bottom: 20px;
     background-color: #e2e2e2;

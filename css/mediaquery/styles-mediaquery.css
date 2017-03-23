@@ -11,6 +11,12 @@ body {
     font: 14px Source Sans Regular, Tahoma, sans-serif;
 }
 
+img {
+    max-width:100%;
+    max-height: 100%;
+}
+
+
 @font-face {
     font-family: "Source Sans Black";
     src: url("../../fonts/SourceSansPro-Black.ttf") format("truetype");
@@ -89,11 +95,6 @@ body {
 }
 
 /* Slider */
-img {
-    max-width:100%;
-    max-height: 100%;
-}
-
 .slider {
     border-radius: 7px 0 7px 7px;
 }
