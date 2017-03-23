@@ -8,6 +8,10 @@
     cursor: pointer;
 }
 
+.fa.fa-chevron-up {
+    display: none;
+}
+
 .news-heading {
     flex: 6;
 }
@@ -33,6 +37,15 @@
 }
 
 .news:hover .fa.fa-chevron-down {
-    background-color: #373435;
-    color: #ebebeb;
+    display: none;
+}
+
+.news:hover .fa.fa-chevron-up {
+    flex: 2;
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid rgba(0,0,0, 0.1);
+    cursor: pointer;
 }
