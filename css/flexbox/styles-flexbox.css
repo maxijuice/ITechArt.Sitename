@@ -37,7 +37,7 @@ img {
 }
 
 /* Container */
-#wrapper {
+#content-wrapper {
     max-width: 1024px;
     padding: 0 5px 50px;
     margin: 100px auto 0;
@@ -95,18 +95,7 @@ header {
     text-decoration: none;
 }
 
-/* Slider */
-.slider {
-    border-radius: 7px 0 7px 7px;
-}
-
-.slider img {
-    width: 95%;
-    box-shadow: -11px 11px var(--box-shadow-color);
-    border-radius: inherit;
-    margin: 0 auto 11px;
-}
-
+/* Sections */
 .content-section {
     display: flex;
     flex-flow: column nowrap;
