@@ -1,10 +1,4 @@
 /* Document style */
-:root {
-    --main-bg-color: #ebebeb;
-    --main-heading-color: #373435;
-    --box-shadow-color: rgba(0,0,0,0.1);
-}
-
 body {
     display: flex;
     flex-flow: column nowrap;
@@ -42,13 +36,13 @@ img {
     padding: 0 5px 50px;
     margin: 100px auto 0;
     text-align: center;
-    background-color: var(--main-bg-color);
+    background-color: #ebebeb;
     border-radius: 7px;
 }
 
 /* Header */
 header {
-    background-color: var(--main-bg-color);
+    background-color: #ebebeb;
     display: flex;
     justify-content: center;
 }
@@ -56,9 +50,9 @@ header {
 .page-heading {
     padding: 20px 30px;
     margin-top: -50px;
-    box-shadow: -11px 11px 0 0 var(--box-shadow-color);
-    background-color: var(--main-bg-color);
-    color: var(--main-heading-color);
+    box-shadow: -11px 11px 0 0 rgba(0,0,0,0.1);
+    background-color: #ebebeb;
+    color: #373435;
     font: 40px "Source Sans Black", Tahoma, sans-serif;
     border-radius: 7px;
 }
@@ -105,7 +99,7 @@ header {
 .section-heading {
     margin-top: 2em;
     margin-bottom: 0;
-    color: var(--main-heading-color);
+    color: #373435;
     font: 32px "Source Sans Bold", Tahoma, sans-serif;
     text-transform: uppercase;
 }
@@ -122,7 +116,7 @@ header {
     align-items: flex-start;
     justify-content: center;
     padding: 0 10px;
-    background-color: var(--main-bg-color);
+    background-color: #ebebeb;
 }
 
 .button-attention a {
@@ -133,7 +127,7 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 7px;
-    box-shadow: -6px 6px var(--box-shadow-color);
+    box-shadow: -6px 6px rgba(0,0,0,0.1);
 }
 
 .new-button-row {
@@ -184,10 +178,10 @@ header {
 
 .card-img {
     padding: 20px;
-    background-color: var(--main-heading-color);
+    background-color: #373435;
     color: #ffffff;
     border-radius: 5px 0 5px 5px;
-    box-shadow: -6px 6px var(--box-shadow-color);
+    box-shadow: -6px 6px rgba(0,0,0,0.1);
 }
 
 .card-img.fa {
@@ -212,7 +206,7 @@ header {
     text-transform: uppercase;
     text-align: left;
     font: 16px "Source Sans Bold", Tahoma, sans-serif;
-    color: var(--main-heading-color);
+    color: #373435;
 }
 
 .card-details {
@@ -226,7 +220,7 @@ header {
     text-transform: uppercase;
     font: 16px "Source Sans Bold", Tahoma, sans-serif;
     letter-spacing: 0.1em;
-    color: var(--main-heading-color);
+    color: #373435;
 }
 
 .info-link .fa.fa-chevron-right {
@@ -252,7 +246,7 @@ header {
     min-width: 200px;
     max-width: 250px;
     border-radius: 7px 0 7px 7px;
-    box-shadow: -6px 6px var(--box-shadow-color);
+    box-shadow: -6px 6px rgba(0,0,0,0.1);
     margin: 20px;
     padding-bottom: 20px;
     background-color: #e2e2e2;
@@ -273,7 +267,7 @@ header {
 .news-heading {
     text-transform: uppercase;
     font: 16px "Source Sans Bold", Tahoma, sans-serif;
-    color: var(--main-heading-color);
+    color: #373435;
 }
 
 .tag-cloud-heading {
@@ -287,10 +281,10 @@ header {
     margin: 5px;
     display: inline-block;
     padding: 8px 16px;
-    background-color: var(--main-bg-color);
+    background-color: #ebebeb;
     border-radius: 5px;
-    border: 2px solid var(--box-shadow-color);
-    box-shadow: -5px 5px var(--box-shadow-color);
+    border: 2px solid rgba(0,0,0,0.1);
+    box-shadow: -5px 5px rgba(0,0,0,0.1);
     text-transform: uppercase;
     font: 16px "Source Sans Bold", Tahoma, sans-serif;
 }
@@ -307,6 +301,6 @@ header {
 }
 
 .footer-details {
-    color: var(--main-bg-color);
+    color: #ebebeb;
     font: 16px "Source Sans Regular", Tahoma, sans-serif;
 }

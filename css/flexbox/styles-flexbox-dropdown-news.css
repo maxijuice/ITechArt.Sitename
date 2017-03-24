@@ -1,4 +1,4 @@
-.fa.fa-chevron-down {
+.accordeon {
     flex: 2;
     align-self: stretch;
     display: flex;
@@ -8,8 +8,14 @@
     cursor: pointer;
 }
 
-.fa.fa-chevron-up {
+.accordeon .fa.fa-chevron-up,
+.check-dropdown-news:checked + .news .accordeon > .fa.fa-chevron-down {
     display: none;
+}
+
+.check-dropdown-news:checked + .news .accordeon > .fa.fa-chevron-up,
+.accordeon .fa.fa-chevron-down {
+    display: inherit;
 }
 
 .news-heading {
@@ -31,21 +37,12 @@
     padding-bottom: 0;
 }
 
-.news:hover {
+.check-dropdown-news:checked + .news {
     height: 350px;
     padding-bottom: 20px;
 }
 
-.news:hover .fa.fa-chevron-down {
+.check-dropdown-news {
     display: none;
 }
 
-.news:hover .fa.fa-chevron-up {
-    flex: 2;
-    align-self: stretch;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-left: 1px solid rgba(0,0,0, 0.1);
-    cursor: pointer;
-}
